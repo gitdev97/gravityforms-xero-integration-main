@@ -4,15 +4,15 @@ add_action('plugins_loaded', array('GravityFormXeroSettings', 'init'));
 
 class GravityFormXeroSettings extends GravityFormXeroIntegration {
 
-    public $_xero_description_class = 'ys-global-xero-description';
+    public $_xero_description_class = 'global-xero-description';
 
-    public $_currency_field_class = 'ys-xero-currency';
+    public $_currency_field_class = 'xero-currency';
 
-    public $_xero_contact_field_class = 'ys-xero-contact';
+    public $_xero_contact_field_class = 'xero-contact';
 
-    public $_xero_account_type_field_class = 'ys-xero-account-type';
+    public $_xero_account_type_field_class = 'xero-account-type';
 
-    public $_xero_country_name_field_class = 'ys-xero-country-name';
+    public $_xero_country_name_field_class = 'xero-country-name';
 
     public $_gravity_form = array();
 
@@ -238,7 +238,7 @@ class GravityFormXeroSettings extends GravityFormXeroIntegration {
         <script defer>
             jQuery(function ($) {
                 let firma_field = $('.field-firma input'),
-                    xero_contact = $('.ys-xero-contact input'),
+                    xero_contact = $('.xero-contact input'),
                     vorname_field = $('.field-vorname input'),
                     nachname_field = $('.field-nachname input');
                 if(xero_contact.length && (vorname_field.length || firma_field.length || nachname_field.length)){
